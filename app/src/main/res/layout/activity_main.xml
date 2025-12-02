@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <Button
+            android:id="@+id/btn_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:layout_gravity="end"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Daily Entry"
+            android:textSize="20sp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Date Selection -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <Button
+                android:id="@+id/btn_select_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Date"/>
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No Date Selected"
+                android:layout_marginStart="16dp"
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+        <!-- Inputs -->
+        <EditText
+            android:id="@+id/et_sleep"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Sleep Time (hours)"
+            android:inputType="numberDecimal"/>
+
+        <EditText
+            android:id="@+id/et_screen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Screen Time (hours)"
+            android:inputType="numberDecimal"/>
+
+        <EditText
+            android:id="@+id/et_steps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Steps (count)"
+            android:inputType="number"/>
+
+        <EditText
+            android:id="@+id/et_weight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Weight (kg)"
+            android:inputType="numberDecimal"/>
+
+        <Button
+            android:id="@+id/btn_save_advice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save and Get Advice"
+            android:backgroundTint="#4CAF50"/>
+    </LinearLayout>
+</ScrollView>

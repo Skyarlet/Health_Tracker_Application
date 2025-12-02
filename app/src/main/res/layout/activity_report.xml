@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Health Report (Last 4 Records)"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginVertical="10dp"/>
+
+        <!-- Charts (Using our Custom View) -->
+        <TextView android:text="Sleep Time (Hrs)" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <com.example.healthtrack.util.SimpleLineChartView
+            android:id="@+id/chart_sleep"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="#EEE"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView android:text="Screen Time (Hrs)" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <com.example.healthtrack.util.SimpleLineChartView
+            android:id="@+id/chart_screen"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="#EEE"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView android:text="Steps" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <com.example.healthtrack.util.SimpleLineChartView
+            android:id="@+id/chart_steps"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="#EEE"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView android:text="Weight (kg)" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <com.example.healthtrack.util.SimpleLineChartView
+            android:id="@+id/chart_weight"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="#EEE"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- Advice Section -->
+        <TextView
+            android:id="@+id/tv_advice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Loading advice..."
+            android:padding="16dp"
+            android:background="#E8F5E9"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+</ScrollView>
